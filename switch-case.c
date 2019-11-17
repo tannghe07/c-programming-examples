@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main(){
-	char a;
+	int a;
 	printf("How many seasons in a year?\n");
 	printf("A. 1\nB. 2\nC. 3\nD. 4\n");
 	printf("Choose your answer: ");
-	a= getchar();
+	scanf("%c", &a);
 	switch(a){
 		case'a':
 		case'A':
