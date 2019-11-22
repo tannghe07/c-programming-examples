@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main(){
-	int n, i, j, count=0;
-	scanf("%d", &n);
-	for(j=2; j<=n; j++){
+	int a, b, i, j, count=0;
+	scanf("%d%d", &a, &b);
+	for(j=a; j<=b; j++){
 		for(i=1; i<=j; i++){
 			if(j%i==0){
 				count++;
