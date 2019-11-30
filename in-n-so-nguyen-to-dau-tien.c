@@ -8,7 +8,7 @@ int main(){
 				k=0;
 				break;
 			}
-		}if(k!=0){
+		}if(k==1){
 			printf("%d\t", i);
 			++count;
 		}
