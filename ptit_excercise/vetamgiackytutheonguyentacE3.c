@@ -2,7 +2,7 @@
 int main(){
 	int n, i, j;
 	scanf("%d", &n);
-	int arr[n][n];
+	int arr[100][100];
 	for(i=1;i<=n;i++){
 		for(j=n;j>=i;j--){
 			arr[1][n]=65;
