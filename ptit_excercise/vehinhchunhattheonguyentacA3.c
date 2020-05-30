@@ -2,24 +2,20 @@
 int main(){
 	int a, b, i, j;
 	scanf("%d%d", &a, &b);
-	int arr[a][b];
-	for(i=a;i>=1;i--){
-		for(j=1;j<=b;j++){
-			if(a>b){
-				arr[i][1]=a;	
-				arr[a][j]=a;
-			}	
-			else {
-				arr[i][1]=b;
-			 	arr[a][j]=b;
-			}
-//			arr[i-1][j+1]=arr[i][j]-1;
-		}
-	}
-	
 	for(i=1;i<=a;i++){
 		for(j=1;j<=b;j++){
-			printf("%d", arr[i][j]);
+			if(a==b){
+				if(i>=a-j+1) printf("%d",a-b+i);
+				else printf("%d", a-j+1);
+			}
+			else if(a<b){
+				if(i>=a-j+1) printf("%d", b-a+i);
+				else printf("%d", b-j+1);
+			}
+			else{
+				if(i>=a-j+1) printf("%d", i);
+				else printf("%d", a-j+1);
+			}
 		}
 		printf("\n");
 	}

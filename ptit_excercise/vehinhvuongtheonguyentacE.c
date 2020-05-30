@@ -1,15 +1,22 @@
 #include<stdio.h>
 int main(){
-	int i, j, n;
+	int n, i, j, o;
 	scanf("%d", &n);
-	int arr[2*n][2*n];
-	for(i=1;i<=2*n-1;i++){
+	for(i=1;i<=n;i++){
+		int k=n;
 		for(j=1;j<=2*n-1;j++){
-			arr[1][j]=arr[2*n-1][j]=n;
-			arr[i][1]=arr[i][2*n-1]=n;
-			if(j<=n) arr[i+1][j+1]=arr[i][j]-1;
-			else arr[i+1][j-1]=arr[i][j]-1;
-			printf("%d", arr[i][j]);
+			if(j<i) printf("%d", k--);
+			else if(j>=i && j<=2*n-1-i) printf("%d", k);
+			else printf("%d", k++);
+		}
+		printf("\n");
+	}
+	for(i=1;i<=n-1;i++){
+		int k=n;
+		for(j=1;j<=2*n-1;j++){
+			if(j<n-i) printf("%d", k--);
+			else if(j>=n-i && j<=n-1+i) printf("%d", k);
+			else printf("%d", k++);
 		}
 		printf("\n");
 	}

@@ -6,7 +6,7 @@ int main(){
 	for(i=1;i<=n;i++){
 		for(j=1;j<=i;j++){
 			arr[1][1]=65;
-			arr[i+1][j]=arr[i][j]+1;
+			arr[i+1][1]=arr[i][1]+1;
 			arr[i][j+1]=arr[i][j]+n-j;
 			printf("%c ", arr[i][j]);
 		}

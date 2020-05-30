@@ -12,7 +12,7 @@ int main(){
 	scanf("%d", &n);
 	for(i=2;i<=n;i++){
 		for(;n%snt(i)==0;n/=snt(i)){
-			printf("%d ", snt(i));
+			 printf("%d ", snt(i));
 		}
 	}
 	return 0;
