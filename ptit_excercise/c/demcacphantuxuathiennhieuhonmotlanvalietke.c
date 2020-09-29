@@ -8,8 +8,7 @@ int main(){
 	for(i=0;i<n;i++) b[i]=1;
 	for(i=0;i<n;i++){
 		count=1;
-		if(b[i]){
-			b[i]=0;
+		if(b[i]==1){
 			for(j=i+1;j<n;j++){
 				if(a[i]==a[j]){
 					count++;
